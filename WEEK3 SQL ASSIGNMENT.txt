@@ -1,0 +1,16 @@
+WEEK 3 SQL ASSIGNMENT
+1.1 TOTAL SPENT PER CATEGORY
+   SELECT  CATEGORY, SUM(amount) AS total_expense
+   FROM expenses
+   GROUP BY category;
+
+1.2 AVERAGE EXPENSE PER CATEGORY
+   SELECT category, AVG(amount) AS average_expense_per_category
+   FROM expenses
+   GROUP BY category;
+
+ BONUS CHALLENGE
+   SELECT category, MAX(amount) AS highest_expense
+   FROM expenses
+   GROUP BY category
+   LIMIT 2;
