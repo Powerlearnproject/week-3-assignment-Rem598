@@ -10,7 +10,9 @@ WEEK 3 SQL ASSIGNMENT
    GROUP BY category;
 
  BONUS CHALLENGE
-   SELECT category, MAX(amount) AS highest_expense
+   SELECT category, SUM(amount) AS total_spent
    FROM expenses
    GROUP BY category
-   LIMIT 2;
+   ORDER BY total_spent DESC
+   LIMIT 4;
+
